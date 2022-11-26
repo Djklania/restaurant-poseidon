@@ -1,18 +1,13 @@
-export const navLinks = [
-    {
-        id: "home",
-        title: "Home",
-    },
-    {
-        id: "features",
-        title: "Features",
-    },
-    {
-        id: "product",
-        title: "Product",
-    },
-    {
-        id: "clients",
-        title: "Clients",
-    },
-];
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "../App.jsx";
+import { BrowserRouter } from "react-router-dom";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+    <React.StrictMode>
+        <BrowserRouter>
+            <App />
+        </BrowserRouter>
+    </React.StrictMode>
+);
