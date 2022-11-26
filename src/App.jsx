@@ -9,8 +9,10 @@ const App = () => (
             </div>
         </div>
 
-        <div>
-
+        <div className={`bg-secondary ${styles.flexStart}`}>
+            <div className={`${styles.boxWidth}`}>
+            Your content
+            </div>
         </div>
 
     </div>
