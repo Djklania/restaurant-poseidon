@@ -1,12 +1,12 @@
 import React from 'react';
 import "./navbar.css";
-import { BrowserRouter } from "react-router-dom";
+import {Link} from "react-router-dom";
 
-const Navbar = () =>  {
-
+function Navbar() {
     return (
         <div className="bg-primary w-full overflow-hidden">
-            ABA
+            Navbar
+            <Link to="/menu"> GO TO MENU </Link>
         </div>
     )
 }

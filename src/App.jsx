@@ -1,14 +1,20 @@
 import React from 'react'
 import styles from './style'
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from './components/navbar/navbar.jsx'
-import { BrowserRouter, Routes } from "react-router-dom";
+import Menu from "./components/menu/menu.jsx";
 
-const App = () => {
+function App() {
     return (
-      <>
-          <Navbar />
-      </>
+      <div>
+          <Router>
+              <Routes>
+                  <Route path="/" element={<Navbar />} />
+                  <Route path="/menu" element={<Menu />} />
+              </Routes>
+          </Router>
+      </div>
     )
-  };
-  
+  }
+
   export default App;
