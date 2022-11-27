@@ -5,7 +5,7 @@ const Menu = () => {
     return (
         <div className={`bg-secondary`}>
             Menu
-            <Link to="/"> GO TO HOME/NAVBAR </Link>
+            {/* <Link to="/"> GO TO HOME </Link> */}
         </div>
     )
 }
